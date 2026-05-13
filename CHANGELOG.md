@@ -49,6 +49,15 @@ versioning.
   ISM guidelines to ISO/IEC 27001:2022 Annex A categories (cell references only),
   Australian Privacy Principles to GDPR (cell references only), PSPF policies to ISM
   guidelines.
+- IRAP skill: SKILL.md, end-to-end assessment workflow, IRAP-flavoured SSP and SoA
+  templates, worked examples (scoping document and finding-response register).
+- PSPF skill: SKILL.md, version-aware register noting the 2024 redesign, per-policy
+  pages for all 16 policies (pre-2024 numbering, with explicit notes that the redesign
+  may have moved them), and an index page.
+- Top-level `templates/`: drop-in System Security Plan, Statement of Applicability,
+  Privacy Impact Assessment, Notifiable Data Breach runbook, and Incident Response
+  Plan. The SSP and SoA templates are framework-neutral; the IRAP-specific variants
+  remain under `skills/irap/`.
 
 ## [0.0.1] - 2026-05-13
 
