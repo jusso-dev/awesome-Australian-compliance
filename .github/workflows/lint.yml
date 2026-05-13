@@ -1,0 +1,64 @@
+name: lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdownlint:
+    name: markdownlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install markdownlint-cli
+        run: npm install --no-save markdownlint-cli@0.41.0
+      - name: Run markdownlint
+        run: npx markdownlint-cli '**/*.md' --ignore node_modules
+
+  link-check:
+    name: link-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install markdown-link-check
+        run: npm install --no-save markdown-link-check@3.12.2
+      - name: Run link check
+        run: |
+          set -e
+          find . -name '*.md' -not -path './node_modules/*' -print0 |
+            xargs -0 -I{} npx markdown-link-check --quiet --config .github/workflows/link-check.json {}
+
+  spelling:
+    name: au-spelling-sanity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject common US spellings
+        run: |
+          set -e
+          patterns='\borganization\b|\borganizations\b|\bauthorize\b|\bauthorized\b|\bauthorization\b|\bcenter\b|\bcolor\b|\bbehavior\b|\bdefense\b|\banalyze\b'
+          if grep -RInE "$patterns" --include='*.md' --exclude-dir=node_modules .; then
+            echo "Found US spellings. Use Australian spelling: organisation, authorise, centre, colour, behaviour, defence, analyse."
+            exit 1
+          fi
+
+  em-dash:
+    name: reject-em-dashes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject em dashes in markdown
+        run: |
+          set -e
+          if grep -RIn $'—' --include='*.md' --exclude-dir=node_modules .; then
+            echo "Found em dashes. Use a comma, a colon, or two sentences."
+            exit 1
+          fi
