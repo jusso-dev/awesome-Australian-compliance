@@ -16,6 +16,11 @@ If you add a citation in a skill, add the URL here in the same PR.
 | Essential Eight Assessment Process Guide | <https://www.cyber.gov.au/resources-business-and-government/essential-cybersecurity/essential-eight/essential-eight-assessment-process-guide> | TODO(source) |
 | Information Security Manual (ISM) | <https://www.cyber.gov.au/resources-business-and-government/essential-cybersecurity/ism> | TODO(source) |
 | IRAP overview | <https://www.cyber.gov.au/about-us/about-asd/programs-and-services/irap> | TODO(source) |
+| IRAP Common Assessment Framework v1.0 (April 2025) | <https://www.cyber.gov.au/sites/default/files/2025-04/IRAP%20common%20assessment%20framework.pdf> | 2026-05-13 |
+| IRAP Policy and Procedures | <https://www.cyber.gov.au/sites/default/files/2023-03/IRAP%20Policy%20and%20Procedures.pdf> | TODO(source) |
+| IRAP Assessment Report Template (V1.0, 2025) | <https://www.cyber.gov.au/sites/default/files/2025-02/IRAP-Assessment-Report-Template-V1.0_2025.docx> | TODO(source) |
+| Cloud Security Assessment Report Template | <https://www.cyber.gov.au/sites/default/files/2023-03/Cloud-Security-Assessment-Report-Template-06-July-2022.docx> | TODO(source) |
+| IRAP Consumer Guide | <https://www.cyber.gov.au/resources-business-and-government/governance-and-user-education/governance/irap/irap-consumer-guide> | TODO(source) |
 
 ## Office of the Australian Information Commissioner (OAIC) - oaic.gov.au
 
