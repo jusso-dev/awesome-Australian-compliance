@@ -12,8 +12,14 @@ it stops guessing and starts working from the actual published Australian framew
 knows:
 
 - The Essential Eight, all eight strategies, with Maturity Levels 1, 2 and 3
-- The Information Security Manual (ISM), organised by guideline group
-- The IRAP assessment workflow, plus drop-in SSP and SoA templates
+- The Information Security Manual (ISM), organised by guideline group, version-aware
+  across quarterly releases
+- The IRAP assessment workflow, **aligned to the ACSC's published IRAP Common
+  Assessment Framework (CAF) v1.0**: the four CAF stages, all 46 IRAP Assessment
+  Requirements (IRAP-AR-0001 to IRAP-AR-0046), the seven CAF implementation outcomes,
+  the evidence-quality and assessment-degree models, the four sampling methodologies,
+  and the assessment-versus-authorisation boundary distinction. Plus drop-in SSP and
+  SoA templates
 - The Privacy Act 1988 and all 13 Australian Privacy Principles
 - The Notifiable Data Breaches scheme and a runbook for responding to one
 - The Protective Security Policy Framework (PSPF) core requirements
@@ -108,6 +114,49 @@ Claude will:
 The same pattern works for "is this app APP 11 compliant", "draft an NDB notification for
 this scenario", "produce a PSPF Core Requirement 7 evidence pack", and so on.
 
+## Why the IRAP skill in particular is worth your time
+
+One of the main reasons to install this pack is that the **IRAP skill is aligned to
+the ACSC's published IRAP Common Assessment Framework (CAF) v1.0, April 2025**. The
+CAF is the authoritative methodology IRAP-registered assessors are required to follow.
+Generic AI assistants do not have it in their head; this pack puts it on disk for them.
+
+Concretely, the IRAP skill encodes:
+
+- **The four CAF stages** (Plan and prepare, Define the assessment boundary, Assess the
+  controls, Produce the IRAP assessment report).
+- **All 46 IRAP Assessment Requirements** (IRAP-AR-0001 to IRAP-AR-0046) grouped under
+  the CAF's seven quality standards. Ask "is this IRAP-AR-0009 satisfied" and the
+  agent quotes the requirement and walks the relevant stage.
+- **The seven CAF implementation outcomes** (Effective, Ineffective, Alternate control,
+  Not assessed, Not applicable, No visibility, Not implemented), with the CAF's own
+  worked examples. **IRAP-AR-0003** forbids variants of this terminology; the skill
+  enforces the right vocabulary.
+- **The four-tier evidence quality model** (Excellent, Good, Fair, Poor) crossed with
+  the coverage axis to produce the **Basic / Focused / Comprehensive** assessment
+  degree from the CAF matrix.
+- **The four CAF sampling methodologies** (Random, Stratified, Risk-based,
+  Systematic).
+- **Assessment boundary versus authorisation boundary** and the layered-assessment
+  model (Layer 1 cloud infrastructure, Layer 2 SaaS, Layer 3 consumer agency).
+- **The mandatory Conflict of Interest declaration to ASD IRAP via the Partner Portal
+  at least 7 business days before commencement** (IRAP-AR-0008 through IRAP-AR-0011).
+- **The ISM-release handling rule**: use the latest ISM at start (IRAP-AR-0014); if
+  two ISM releases lapse during the engagement, conduct a delta assessment
+  (IRAP-AR-0015). The skill cross-references the version-aware ISM register so a long
+  engagement does not drift silently.
+- **The deliverables**: IRAP Security Assessment Report (or Cloud Security Assessment
+  Report) and Controls Matrix (or Cloud Controls Matrix), using the ASD-published
+  Word templates. The skill points at the live URLs.
+- **The CAF's explicit prohibitions**: no statements of certification, conformity or
+  authorisation (IRAP-AR-0041); no risk ratings authored by the assessor
+  (IRAP-AR-0033); no marketing jargon (IRAP-AR-0042).
+
+A consultant scoping their first IRAP, a CISO refreshing an SSP for a triennial
+reassessment, and an engineer answering "what evidence do we need for IRAP-AR-0024" all
+get the same CAF-aligned answer. That alignment is what makes the IRAP skill useful in
+a real engagement instead of merely plausible-sounding.
+
 ## Reading without an AI assistant
 
 If you never plan to use Claude Code or Cursor, the markdown is still useful. Browse
@@ -128,7 +177,7 @@ dates.
 | Information Security Manual (ISM) | 1 | shipped (version-aware) | TODO(source) |
 | Privacy Act 1988 and the 13 Australian Privacy Principles | 1 | shipped | TODO(source) |
 | Notifiable Data Breaches scheme | 1 | shipped | TODO(source) |
-| IRAP assessment workflow | 1 | shipped | TODO(source) |
+| IRAP assessment workflow | 1 | shipped (aligned to ACSC CAF v1.0, April 2025) | 2026-05-13 |
 | Protective Security Policy Framework (PSPF) | 1 | shipped (version-aware) | TODO(source) |
 | Drop-in templates (SSP, SoA, PIA, NDB runbook, IRP) | 1 | shipped | TODO(source) |
 | APRA CPS 234 | 2 | not started | n/a |
