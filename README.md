@@ -124,12 +124,12 @@ dates.
 
 | Framework | Phase | Status | Last verified |
 | --- | --- | --- | --- |
-| Essential Eight (ML1, ML2, ML3) | 1 | in progress | TODO(source) |
-| Information Security Manual (ISM) | 1 | not started | TODO(source) |
+| Essential Eight (ML1, ML2, ML3) | 1 | shipped | TODO(source) |
+| Information Security Manual (ISM) | 1 | shipped (version-aware) | TODO(source) |
+| Privacy Act 1988 and the 13 Australian Privacy Principles | 1 | shipped | TODO(source) |
+| Notifiable Data Breaches scheme | 1 | shipped | TODO(source) |
 | IRAP assessment workflow | 1 | not started | TODO(source) |
-| Privacy Act 1988 and the 13 Australian Privacy Principles | 1 | not started | TODO(source) |
-| Notifiable Data Breaches scheme | 1 | not started | TODO(source) |
-| Protective Security Policy Framework (PSPF) | 1 | not started | TODO(source) |
+| Protective Security Policy Framework (PSPF) | 1 | not started (mapping table only) | TODO(source) |
 | APRA CPS 234 | 2 | not started | n/a |
 | DTA Digital Service Standard and CAAF | 2 | not started | n/a |
 | Consumer Data Right security profile | 2 | not started | n/a |
